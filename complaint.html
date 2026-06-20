@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <style>
+body{
+    margin:0;
+    background:linear-gradient(90deg, #0b3d6e 0%, #06284a 35%, #02182d 70%, #000000 100%);
+    font-family:Arial, sans-serif;
+    padding-top: 40px;
+}
+
+.complaint-section{
+    max-width:700px;
+    margin:50px auto;
+    padding:30px;
+    background:#141307;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.complaint-section h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.complaint-section p{
+    text-align:center;
+    margin-bottom:25px;
+    color:#555;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+    font-size:15px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#333;
+}
+.para{
+    color: white;
+}
+</style>
+
+</head>
+<body>
+    <!-- Navbar -->
+
+<nav>
+    <div class="logo">🎁 Prestige Gifts</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Products</a></li>
+        <div><li class="dropdown">
+    <a href="birth.html, anniversary.html, wedding.html">Categories <i class="fa fa-caret-down"></i></a>
+
+    <ul class="dropdown-menu">
+        <li><a href="birth.html">Birthday Gifts</a></li>
+        <li><a href="anniversary.html">Anniversary Gifts</a></li>
+        <li><a href="wedding.html">Wedding Gifts</a></li>
+    </ul>
+</li>
+</div>   
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+<section class="complaint-section">
+
+    <h2>Submit a Complaint</h2>
+
+    <p class="para">
+        If you have any issue regarding our products or services,
+        please fill out the complaint form below.
+    </p>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Order Number</label>
+        <input type="text" placeholder="Enter your order number">
+
+        <label>Complaint Category</label>
+        <select required>
+            <option>Select Category</option>
+            <option>Late Delivery</option>
+            <option>Damaged Product</option>
+            <option>Wrong Product Received</option>
+            <option>Payment Issue</option>
+            <option>Customer Service Issue</option>
+            <option>Other</option>
+        </select>
+
+        <label>Complaint Details</label>
+        <textarea placeholder="Describe your complaint here..." required></textarea>
+
+        <button type="submit">Submit Complaint</button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

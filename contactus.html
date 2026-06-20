@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <style>
+    body{
+    margin:0;
+    background:linear-gradient(90deg, #0b3d6e 0%, #06284a 35%, #02182d 70%, #000000 100%);
+    font-family:Arial, sans-serif;
+    color: aliceblue;
+}
+
+.contact-section{
+    max-width:900px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.container{
+    text-align:center;
+}
+
+.contact-heading{
+    font-size:36px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.contact-info{
+    margin-bottom:40px;
+    line-height:1.8;
+}
+
+.contact-form{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    max-width:600px;
+    margin:auto;
+    text-align:left;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #dcd5d5;
+    border-radius:5px;
+    font-size:15px;
+    box-sizing:border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+textarea{
+    height:150px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#333;
+}
+</style>
+
+
+<body>
+<!-- Navbar -->
+
+<nav>
+    <div class="logo">🎁 Prestige Gifts</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Products</a></li>
+        <div><li class="dropdown">
+    <a href="birth.html, anniversary.html, wedding.html">Categories <i class="fa fa-caret-down"></i></a>
+
+    <ul class="dropdown-menu">
+        <li><a href="birth.html">Birthday Gifts</a></li>
+        <li><a href="anniversary.html">Anniversary Gifts</a></li>
+        <li><a href="wedding.html">Wedding Gifts</a></li>
+    </ul>
+</li>
+</div>   
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+    <section class="contact-section">
+     <div class="container">
+        <h2 class="contact-heading">contact us</h2>
+     <div class="contact-info">
+        <p>online store customer service timings:monday to saturday(09:00 to 05:00pm)</p>
+        <p>you can get in touch with our customer service team through:</p>
+        <p><strong>Email:</strong>alamraihana6@gmail.com</p>
+        <p><strong>Phone:</strong>03449527604</p>
+     
+    </div>
+<form class="contact-form">
+
+    <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your name" required>
+    </div>
+
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" name="email"
+        placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+        <label>Message</label>
+        <textarea id="message" name="message"
+        placeholder="Enter your message" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+
+</form>
+     </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
